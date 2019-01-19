@@ -1,0 +1,72 @@
+.sidebar{
+	width: 10%;
+	float: left;
+	position: fixed;
+	top: 45px;
+	background: rgba(0, 0, 0, .4);
+}
+
+.testimonies{
+	width: 90%;
+	margin-top: 80px;
+	float:right;
+	align-content: center;
+}
+
+#intro{
+	margin: 0px 15%;
+	margin-top: 50px;
+	width: 40%;
+	border: 1px solid black;
+}
+
+#intro #header-intro{
+	text-align: center;
+	font-size: 18pt;
+}
+
+#intro #main-intro{
+	font-size: 12pt;
+	margin: 5%;
+}
+
+.testimonial{
+	margin: 0px 15%;
+	width: 40%;
+	border: 1px solid black;
+}
+
+.testimony{
+	font-size: 12pt;
+	margin: 5%;
+}
+
+.client span{
+	text-align: center;
+	display: block;
+}
+
+.loc{
+	height:50px;
+}
+
+.sidebar a{
+	padding: 0px 5px;
+	text-decoration: none;
+}
+
+.sidebar a:hover span{
+	background-color: rgba(0, 0, 0, .6);
+}
+
+.sidebar span{
+	color:white;
+}
+
+.sidebar .line{
+	display: block;
+}
+
+.sidebar .title{
+	display: block;
+}

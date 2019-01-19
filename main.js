@@ -1,0 +1,1 @@
+let links = document.getElementById("links").childNodes;
