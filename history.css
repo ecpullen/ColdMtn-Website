@@ -1,0 +1,88 @@
+.section{
+	width: 100%;
+}
+
+.beg{
+	margin: 0px 15px;
+	margin-top: 50px;
+}
+
+.left{
+	width: 25%;
+	margin:0px;
+	float: left;
+}
+
+.right{
+	float: left;
+	margin-right: 20%;
+	width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+	position:relative;
+}
+
+.col1{
+	float: left;
+	width: 16%;
+	height: 100%;
+	position:relative;
+}
+
+.col2{
+	float: left;
+	width: 33%;
+	height: 100%;
+	position:relative;
+}
+
+.col3{
+	float: left;
+	width: 50%;
+	height: 100%;
+	position:relative;
+}
+
+.col3 .third{
+	margin-top: 13.5%;
+}
+
+.col4{
+	float: left;
+	width: 66%;
+	height: 100%;
+	position:relative;
+}
+
+.col4 .lowCap{
+	width: 50%;
+}
+
+.col4 .lowCap img{
+	width: 100%;
+	margin: 0px;
+}
+
+.row img{
+	margin: 15px;
+	width: calc(100% - 15px);
+}
+
+.row p{
+	margin: 0px 15px;
+	width: calc(100% - 15px);
+}
+
+.row p.lowCap{
+	position: absolute;
+	bottom: 0px;
+	left: 100%;
+	margin: 15px 15px;
+}

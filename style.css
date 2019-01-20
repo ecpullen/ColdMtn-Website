@@ -29,6 +29,7 @@ header {
 	background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.4);
     overflow: visible;
+    z-index: 1;
 }
 
 
@@ -194,6 +195,35 @@ footer{
 	top: calc(100% - 20px);
 }
 
+/*sidebar*/
+.sidebar{
+	width: 10%;
+	float: left;
+	position: fixed;
+	top: 45px;
+	background: rgba(0, 0, 0, .4);
+}
+
+.sidebar a{
+	padding: 0px 5px;
+	text-decoration: none;
+}
+
+.sidebar a:hover span{
+	background-color: rgba(0, 0, 0, .6);
+}
+
+.sidebar span{
+	color:white;
+}
+
+.sidebar .line{
+	display: block;
+}
+
+.sidebar .title{
+	display: block;
+}
 
 
 
