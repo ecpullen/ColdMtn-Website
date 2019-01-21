@@ -1,15 +1,19 @@
+<?php
+function head($stylesheet){
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Cold Mountain Builders</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<?=$stylesheet?>
 </head>
 
 <body>
 	<div class="header">
 		<header class="header">
 			<div class="dd">
-				<a class="mainlink" href="">Home</a>
+				<a class="mainlink" href="index.html">Home</a>
 			</div>
 			<div class="dd">
 				<a class="mainlink" href="">Our Work</a>
@@ -31,7 +35,7 @@
 			<div class="dd">
 				<a class="mainlink" href="testimonials.php">Testimonials</a>
 					<div class="d-content">
-						<a href="testimonials.php#FWCK"><span class="line">Frederic Whittmann</span> 
+						<a href="testimonials.html#FWCK"><span class="line">Frederic Whittmann</span> 
 									<span class="line">Christine Kondoleon</span> 
 									<span class="title">Owners</span></a>
 						<a href="testimonials.php#JG"><span class="line">John Gillespie</span> 
@@ -61,21 +65,16 @@
 			</div>
 		</header>
 	</div>
-	<div id="main">	
-		<img id="image_roulette" src="main01.jpg">
-		<div id="roulette_control">
-			<div class="triangle-left" onclick="decrPhoto()"></div>
-			<div id="circles">
-				
-			</div>
-			<div class="triangle-right" onclick="incrPhoto()"></div>
-		</div>
-	</div>
-	<img src="images/logo.svg" id="logo">
+<?php
+}
+
+function foot(){
+?>
 	<footer class="footer">
 		&copy; Cold Mountain Builders 2019
 	</footer>
-	
-	<script src="transition.js"></script>
 </body>
 </html>
+<?php
+}
+?>

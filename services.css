@@ -1,0 +1,26 @@
+.services{
+	width: 60%;
+	margin: 0px 20%;
+	margin-top: 80px;
+	align-content: center;
+	background: #FE938C;
+}
+
+.services p{
+	width: 70%;
+	margin-left: 15%;
+	font-size: 15pt;
+}
+
+.services h1{
+	width: 70%;
+	margin-left: 15%;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.services img{
+	width: 70%;
+	margin-left:15%;
+	margin-bottom: 50px;
+}

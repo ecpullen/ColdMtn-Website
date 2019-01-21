@@ -5,6 +5,7 @@ html{
 body {
 	height: 100%;
 	margin: 0%;
+	background-color: #3E4F61;
 }
 
 #main{
@@ -192,6 +193,9 @@ header:hover {
 
 footer{
 	position:fixed;
+	width: 100%;
+	background-color: rgba(0,0,0,.6);
+	color: white;
 	top: calc(100% - 20px);
 }
 

@@ -1,20 +1,23 @@
 .about{
-	width: 90%;
+	width: 60%;
+	margin: 0px 20%;
 	margin-top: 80px;
-	float:right;
 	align-content: center;
-}
-
-.about p{
-	width: 40%;
-	margin-left: 15%;
-	font-size: 15pt;
+	background: #FE938C;
 }
 
 .about h1{
-	width: 40%;
+	width: 70%;
 	margin-left: 15%;
+	padding-top: 50px;
 	text-align: center;
+}
+
+.about p{
+	width: 70%;
+	margin-left: 15%;
+	padding-bottom: 50px;
+	font-size: 15pt;
 }
 
 .about p img{
