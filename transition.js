@@ -28,7 +28,7 @@ function changePhoto(){
 	photoCount = (photoCount) % 13 + 1;
 	console.log(photoCount);
 	circs[photoCount].classList.add("curr");
-	photo.src = "main"+photoCount.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+".jpg";
+	photo.src = "main/main"+photoCount.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+".jpg";
 	
 }
 
@@ -44,7 +44,7 @@ function decrPhoto(){
 	circs[photoCount].classList.remove("curr");
 	photoCount = (photoCount + 11) % 13 + 1;
 	circs[photoCount].classList.add("curr");
-	photo.src = "main"+photoCount.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+".jpg";
+	photo.src = "main/main"+photoCount.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+".jpg";
 }
 
 function setPhoto(x){
@@ -54,7 +54,7 @@ function setPhoto(x){
 	circs[photoCount].classList.remove("curr");
 	photoCount = x;
 	circs[photoCount].classList.add("curr");
-	photo.src = "main"+photoCount.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+".jpg";
+	photo.src = "main/main"+photoCount.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+".jpg";
 }
 
 function checkKey(e){
