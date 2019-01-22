@@ -1,8 +1,9 @@
 
 window.onload = temp;
+let timeout;
 let photoCount = 1;
 function temp(){
-	setInterval(changePhoto, 5000);
+	timeout = setTimeout(changePhoto, 5000);
 	circs = document.getElementById("circles");
 	for(i = 0; i < 13; i++){
 		let temp_circle = document.createElement("DIV");
@@ -48,13 +49,15 @@ function setPhoto(x){
 }
 
 function showImage(){
-		$("#second_image").attr("src", "main/main"+leftPad(photoCount, 2) +".jpg");
-		$("#image_roulette").fadeOut(2000);
-		$("#second_image").fadeIn(2000,function(){
-			$("#image_roulette").attr("src", "main/main"+leftPad(photoCount, 2) +".jpg");
-			$("#image_roulette").fadeIn(1);
-			$("#second_image").fadeOut(1);
-		});
+	$("#second_image").attr("src", "main/main"+leftPad(photoCount, 2) +".jpg");
+	$("#image_roulette").fadeOut(2000);
+	$("#second_image").fadeIn(2000,function(){
+		$("#image_roulette").attr("src", "main/main"+leftPad(photoCount, 2) +".jpg");
+		$("#image_roulette").fadeIn(1);
+		$("#second_image").fadeOut(1);
+	});
+	clearTimeout(timeout);
+	timeout = setTimeout(changePhoto, 5000);
 }
 
 function checkKey(e){
