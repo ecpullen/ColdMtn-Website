@@ -70,7 +70,9 @@ header a:hover{
 }
 
 #search{
-	float:right;
+	position:fixed;
+	right: 0px;
+	top: 0px;
 	padding-right: 30px;
 }
 
