@@ -2,8 +2,9 @@
 	width: 60%;
 	margin: 0px 20%;
 	margin-top: 80px;
+	margin-bottom: 80px;
 	align-content: center;
-	background: #FE938C;
+	background: #967D69;
 }
 
 .services p{
@@ -13,10 +14,11 @@
 }
 
 .services h1{
-	width: 70%;
-	margin-left: 15%;
-	padding-top: 50px;
+	width: 100%;
 	text-align: center;
+	color: white;
+    margin: 0px;
+    padding-top: 50px;
 }
 
 .services img{

@@ -3,6 +3,13 @@ include "headfoot.php";
 
 head("<link rel=\"stylesheet\" type=\"text/css\" href=\"Services.css\">");
 ?>
+
+<div class="sidebar">
+	<a href="history.php"><span class="line">History</span></a>
+	<a href="staff.php"><span class="line">Staff</span></a>
+	<a href="services.php"><span class="line">Services</span></a>
+</div>
+
 <div class="services">
 	<h1>Services</h1>
 	<p>

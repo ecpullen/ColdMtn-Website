@@ -3,11 +3,15 @@ include "headfoot.php";
 
 head("<link rel=\"stylesheet\" type=\"text/css\" href=\"history.css\">");
 ?>
+	<div class="sidebar">
+		<a href="history.php"><span class="line">History</span></a>
+		<a href="staff.php"><span class="line">Staff</span></a>
+		<a href="services.php"><span class="line">Services</span></a>
+	</div>
 	<div class="section beg">
-		<div class="left">
-			<h1>History</h1>
-		</div>
+		<div class="left"><h1></h1></div>
 		<div class="right">
+			<h1>History</h1>
 			<p>Our work over the past thirty years includes historic preservation as well as the construction of significant and distinctive residences on the coast of Maine. Below are representative and significant projects that we have been involved with in midcoast Maine and beyond.</p>
 		</div>
 	</div>
@@ -200,6 +204,7 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"history.css\">");
 			<h1>2006 - 2015</h1>
 		</div>
 		<div class="right">
+			<div class="row border"></div>
 			<div class="row">
 				<div class="col3">
 					<img src="history/history-schotte.jpg">

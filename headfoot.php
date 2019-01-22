@@ -6,6 +6,7 @@ function head($stylesheet){
 <head>
 	<title>Cold Mountain Builders</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Karla|Montserrat">
 	<?=$stylesheet?>
 </head>
 
@@ -13,9 +14,9 @@ function head($stylesheet){
 	<div class="header">
 		<header class="header">
 			<div class="dd">
-				<a class="mainlink" href="index.html">Home</a>
+				<a class="mainlink" id="home" href="index.php"><img src="images/logo.svg"></a>
 			</div>
-			<div class="dd">
+			<!-- <div class="dd">
 				<a class="mainlink" href="">Our Work</a>
 					<div class="d-content">
 						<a href="">Kitchens</a>
@@ -23,7 +24,7 @@ function head($stylesheet){
 						<a href="">Exteriors</a>
 						<a href="">Interiors</a>
 					</div>
-			</div>
+			</div> -->
 			<div class="dd">
 				<a class="mainlink" href="aboutus.php">About Us</a>
 					<div class="d-content">
@@ -35,7 +36,7 @@ function head($stylesheet){
 			<div class="dd">
 				<a class="mainlink" href="testimonials.php">Testimonials</a>
 					<div class="d-content">
-						<a href="testimonials.html#FWCK"><span class="line">Frederic Whittmann</span> 
+						<a href="testimonials.php#FWCK"><span class="line">Frederic Whittmann</span> 
 									<span class="line">Christine Kondoleon</span> 
 									<span class="title">Owners</span></a>
 						<a href="testimonials.php#JG"><span class="line">John Gillespie</span> 

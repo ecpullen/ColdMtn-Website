@@ -4,6 +4,12 @@ include "headfoot.php";
 head("<link rel=\"stylesheet\" type=\"text/css\" href=\"staff.css\">");
 ?>
 
+<div class="sidebar">
+	<a href="history.php"><span class="line">History</span></a>
+	<a href="staff.php"><span class="line">Staff</span></a>
+	<a href="services.php"><span class="line">Services</span></a>
+</div>
+
 <div class="content">
 	<div class="big">
 		<h1>Staff</h1>

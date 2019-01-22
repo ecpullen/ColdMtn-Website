@@ -12,8 +12,6 @@ function temp(){
 		circs.appendChild(temp_circle);
 	}
 	temp = circs.childNodes[1];
-	console.log(temp);
-	console.log(temp.classList);
 	temp.classList.add("curr");
 	changePhoto();
 	window.onkeydown = checkKey;
@@ -21,40 +19,42 @@ function temp(){
 
 
 function changePhoto(){
-	let photo = document.getElementById("image_roulette");
 	let circs = document.getElementById("circles").childNodes;
-	console.log(circs);
 	circs[photoCount].classList.remove("curr");
 	photoCount = (photoCount) % 13 + 1;
-	console.log(photoCount);
 	circs[photoCount].classList.add("curr");
-	photo.src = "main/main"+photoCount.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+".jpg";
-	
+	showImage();
 }
 
 function incrPhoto(){
-	console.log("incr");
 	changePhoto();
 }
 
 function decrPhoto(){
-	console.log("decr");
-	let photo = document.getElementById("image_roulette");
 	let circs = document.getElementById("circles").childNodes;
 	circs[photoCount].classList.remove("curr");
 	photoCount = (photoCount + 11) % 13 + 1;
 	circs[photoCount].classList.add("curr");
-	photo.src = "main/main"+photoCount.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+".jpg";
+	showImage();
 }
 
 function setPhoto(x){
 	console.log(x);
-	let photo = document.getElementById("image_roulette");
 	let circs = document.getElementById("circles").childNodes;
 	circs[photoCount].classList.remove("curr");
 	photoCount = x;
 	circs[photoCount].classList.add("curr");
-	photo.src = "main/main"+photoCount.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+".jpg";
+	showImage();
+}
+
+function showImage(){
+		$("#second_image").attr("src", "main/main"+leftPad(photoCount, 2) +".jpg");
+		$("#image_roulette").fadeOut(2000);
+		$("#second_image").fadeIn(2000,function(){
+			$("#image_roulette").attr("src", "main/main"+leftPad(photoCount, 2) +".jpg");
+			$("#image_roulette").fadeIn(1);
+			$("#second_image").fadeOut(1);
+		});
 }
 
 function checkKey(e){
@@ -64,4 +64,8 @@ function checkKey(e){
 	else if(e.keyCode == 39){
 		incrPhoto();
 	}
+}
+
+function leftPad(i,pad){
+	return (i).toLocaleString('en-US', {minimumIntegerDigits: pad, useGrouping:false})
 }
