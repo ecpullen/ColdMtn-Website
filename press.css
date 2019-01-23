@@ -1,0 +1,28 @@
+.press{
+	width: 60%;
+	margin: 0px 20%;
+	margin-top: 80px;
+	align-content: center;
+	background: #967D69;
+}
+
+.press h1{
+	width: 70%;
+	margin-left: 15%;
+	padding-top: 50px;
+	text-align: center;
+	color: white;
+}
+
+.press p{
+	width: 70%;
+	margin-left: 15%;
+	padding-bottom: 50px;
+	font-size: 15pt;
+}
+
+.press p img{
+	width: 200px;
+	float:left;
+	margin-right:15px;
+}

@@ -49,7 +49,7 @@ header {
 
 header a:hover{
     background: rgba(0, 0, 0, .6);
-    /*width: 100%;*/
+    width: 100%;
 }
 
 
@@ -256,7 +256,6 @@ footer{
 	position: fixed;
 	top: 50px;
 	background: rgba(0, 0, 0, .4);
-	overflow-y: scroll;
 }
 
 .sidebar a{
