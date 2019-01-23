@@ -15,7 +15,7 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"press.css\">");
 
 			<div class="lefttwo">
 				<div class="left">
-					<a href=""><img src=""></a>
+					<a href=""><img src="./press/articles"></a>
 					<a href=""><p>Open/Download PDF</p></a>
 				</div>
 				<div class="center-left">
