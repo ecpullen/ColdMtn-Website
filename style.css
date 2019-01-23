@@ -59,6 +59,7 @@ header a:hover{
     background: rgba(0, 0, 0, 1);
 }
 
+.dd, #search {
 	display: inline-block;
 	position: relative;
 	overflow: visible;
@@ -266,6 +267,7 @@ footer{
 /*sidebar*/
 .sidebar{
 	width: 10%;
+	padding: 10px;
 	min-width: 150px;
 	float: left;
 	position: fixed;
