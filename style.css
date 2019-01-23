@@ -79,12 +79,13 @@ header a:hover{
 }
 
 .dd img{
-	margin-top: 10px;
-	width: 100%;
+    margin: 0px 5px;
+    margin-top: 10px;
+    width: 150px;
 }
 
 #home{
-	width:150px;
+	width:160px;
 	top: 0px;
 }
 
@@ -124,9 +125,6 @@ header a:hover{
 	top: 50px;
 }
 
-.d-content a:nth-child(1){
-	padding-top:15px; 
-}
 
 .d-content a{
 	float: none;
@@ -136,6 +134,7 @@ header a:hover{
 	padding-top: 10px;
 	padding-bottom: 10px;
     background: rgba(0, 0, 0, 0.4);
+    height: auto;
 }
 
 
