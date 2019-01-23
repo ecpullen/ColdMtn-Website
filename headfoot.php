@@ -61,14 +61,14 @@ function head($stylesheet){
 				</div>
 		</div>
 		<div class="dd">
-			<a class="mainlink" href="">Press</a>
+			<a class="mainlink" href="press.php">Press</a>
 		</div>
 		<div class="dd">
 			<a class="mainlink" href="">Contact Us</a>
 		</div>
 		<div id="search">
 			<form>
-				<input type="text" name="search" placeholder="Search..">
+				<input id="search" type="text" name="search" placeholder="Search..">
 			</form>
 		</div>
 	</header>
