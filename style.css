@@ -261,9 +261,7 @@ footer{
 
 /*sidebar*/
 .sidebar{
-	width: 10%;
-	padding: 10px;
-	min-width: 150px;
+	width: 150px;
 	float: left;
 	position: fixed;
 	top: 50px;

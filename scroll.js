@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$(document).scroll(function(e){
 		let left = $(window).scrollLeft();
 		if(left !== undefined) {
-		    $("header").css('left',-left+10);
+		    $("header").css('left',-left);
 		}
 	});
 	$("input[name=\"search\"").keydown(function(e){
