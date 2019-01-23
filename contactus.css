@@ -1,0 +1,23 @@
+.contact{
+	width: 60%;
+	margin: 0px 20%;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	align-content: center;
+	background: #967D69;
+	padding-bottom: 50px;
+}
+
+.contact p{
+	width: 70%;
+	margin-left: 15%;
+	font-size: 15pt;
+}
+
+.contact h1{
+	width: 100%;
+	text-align: center;
+	color: white;
+    margin: 0px;
+    padding-top: 50px;
+}

@@ -64,7 +64,7 @@ function head($stylesheet){
 			<a class="mainlink" href="press.php">Press</a>
 		</div>
 		<div class="dd">
-			<a class="mainlink" href="">Contact Us</a>
+			<a class="mainlink" href="contactus.php">Contact Us</a>
 		</div>
 		<div id="search">
 			<form>
