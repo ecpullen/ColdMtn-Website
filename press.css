@@ -1,4 +1,4 @@
-.press{
+.press_text_box{
 	width: 60%;
 	margin: 0px 20%;
 	margin-top: 80px;
@@ -6,7 +6,7 @@
 	background: #967D69;
 }
 
-.press h1{
+.press_text_box h1{
 	width: 70%;
 	margin-left: 15%;
 	padding-top: 50px;
@@ -14,15 +14,42 @@
 	color: white;
 }
 
-.press p{
+.press_text_box p{
 	width: 70%;
 	margin-left: 15%;
 	padding-bottom: 50px;
 	font-size: 15pt;
 }
 
-.press p img{
+.press_text_box p img{
 	width: 200px;
 	float:left;
 	margin-right:15px;
 }
+
+.img_container {
+	width: 100%;
+	background: #967D69;
+	border: 3px solid black;
+}
+
+.column {
+  float: left;
+  width: 24.75%;
+  border: 1px solid black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img_cont {
+	padding-top: 2%;
+	padding-right: 10%;
+	padding-left: 10%;
+	width: 100%;
+	height: 200px;
+}
+
