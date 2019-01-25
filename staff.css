@@ -63,6 +63,8 @@
 .side a{
 	color: inherit;
 	text-decoration: none;
+	/*overflow-x: auto;*/
+	word-break: break-all;
 }
 
 .side a:hover{
@@ -89,3 +91,4 @@
 	float: left;
 	width: 40%;
 }
+
