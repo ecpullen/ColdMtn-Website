@@ -71,8 +71,20 @@ header a:hover{
     height: 50px;
 }
 
+.dd#about{
+	width: 115px;
+}
+
 .dd#test{
-	width: 160px;
+	width: 150px;
+}
+
+.dd#press{
+	width: 90px;
+}
+
+.dd#contact{
+	width: 130px;
 }
 
 #search{
@@ -81,6 +93,12 @@ header a:hover{
 	top: 10px;
 	padding-right: 30px;
 }
+
+#search button {
+	margin: 0px;
+	width: 10px;
+}
+
 
 .dd img{
     margin: 0px 5px;

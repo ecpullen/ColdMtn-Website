@@ -26,3 +26,8 @@
 	float:left;
 	margin-right:15px;
 }
+
+a[href="aboutus.php"]{
+	background: rgba(0, 0, 0, 0.2);
+}
+

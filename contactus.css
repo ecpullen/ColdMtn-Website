@@ -4,7 +4,7 @@
 	margin-top: 80px;
 	margin-bottom: 80px;
 	align-content: center;
-	background: #967D69;
+	background: #B9B1A6;
 	padding-bottom: 50px;
 }
 
@@ -25,7 +25,11 @@
 .contact h1{
 	width: 100%;
 	text-align: center;
-	color: white;
+	color: black;
     margin: 0px;
     padding-top: 50px;
+}
+
+a[href="contactus.php"]{
+	background: rgba(0, 0, 0, 0.2);
 }

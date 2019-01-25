@@ -27,7 +27,7 @@ function head($stylesheet){
 					<a href="">Interiors</a>
 				</div>
 		</div> -->
-		<div class="dd">
+		<div class="dd" id="about">
 			<a class="mainlink" href="aboutus.php">About Us</a>
 				<div class="d-content">
 					<a href="history.php">History</a>
@@ -60,15 +60,15 @@ function head($stylesheet){
 								<span class="title">Architect</span></a>
 				</div>
 		</div>
-		<div class="dd">
+		<div class="dd" id="press">
 			<a class="mainlink" href="press.php">Press</a>
 		</div>
-		<div class="dd">
+		<div class="dd" id="contact">
 			<a class="mainlink" href="contactus.php">Contact Us</a>
 		</div>
 		<div id="search">
 			<form>
-				<input type="text" name="search" placeholder="Search..">
+				<input type="text" name="search" placeholder="Search...">
 			</form>
 		</div>
 	</header>

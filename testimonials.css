@@ -40,3 +40,7 @@
 .loc{
 	height:50px;
 }
+
+a[href="testimonials.php"]{
+	background: rgba(0, 0, 0, 0.2);
+}

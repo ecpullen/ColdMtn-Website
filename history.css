@@ -121,3 +121,11 @@
 	left: 100%;
 	margin: 15px 15px;
 }
+
+a[href="aboutus.php"]{
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a[href="history.php"] span.line{
+	background: rgba(0, 0, 0, 0.2);
+}

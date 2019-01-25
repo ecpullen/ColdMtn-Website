@@ -26,3 +26,11 @@
 	margin-left:15%;
 	margin-bottom: 50px;
 }
+
+a[href="aboutus.php"]{
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a[href="services.php"] span.line{
+	background: rgba(0, 0, 0, 0.2);
+}
