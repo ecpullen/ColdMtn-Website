@@ -71,8 +71,20 @@ header a:hover{
     height: 50px;
 }
 
+.dd#about{
+	width: 115px;
+}
+
 .dd#test{
-	width: 160px;
+	width: 150px;
+}
+
+.dd#press{
+	width: 90px;
+}
+
+.dd#contact{
+	width: 130px;
 }
 
 #search{
