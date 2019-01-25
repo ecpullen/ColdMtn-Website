@@ -48,6 +48,7 @@ img {
 }
 
 a {
+	/*word-break: break-all;*/
 	text-decoration: none;
 	color: #665;
 }
