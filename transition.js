@@ -49,13 +49,14 @@ function setPhoto(x){
 }
 
 function showImage(){
-	$("#second_image").attr("src", "main/main"+leftPad(photoCount, 2) +".jpg");
-	$("#image_roulette").fadeOut(2000);
-	$("#second_image").fadeIn(2000,function(){
-		$("#image_roulette").attr("src", "main/main"+leftPad(photoCount, 2) +".jpg");
-		$("#image_roulette").fadeIn(1);
-		$("#second_image").fadeOut(1);
-	});
+	console.log("here");
+	$("#second_image").attr("src", $("#image_roulette").prop("src"));
+	$("#second_image").fadeIn(1);
+	$("#image_roulette").fadeOut(1,function(){
+		// alert("here");
+	$("#image_roulette").attr("src", "main/main"+leftPad(photoCount, 2) +".jpg");
+	$("#second_image").fadeOut(1000);
+	$("#image_roulette").fadeIn(1000);});
 	clearTimeout(timeout);
 	timeout = setTimeout(changePhoto, 5000);
 }

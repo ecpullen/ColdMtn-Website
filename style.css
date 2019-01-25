@@ -239,22 +239,26 @@ header a:hover{
 }
 
 .leftarr{
-	width: 10%;
+	width: 20%;
 	top:50px;
-	height: 100%;
+	bottom: 20px;
 	position: fixed;
 	left:0;
 	z-index: 99;
 }
 
 .leftarr:hover, .rightarr:hover{
-	background-color: rgba(0,0,0,.5);
+ 	background-image: linear-gradient(to right, rgba(0,0,0,.8) , rgba(0,0,0,0.2));
+}
+
+.rightarr:hover{
+	background-image: linear-gradient(to left, rgba(0,0,0,.8) , rgba(0,0,0,0.2));
 }
 
 .rightarr{
 	top:50px;
-	width: 10%;
-	height: 100%;
+	width: 20%;
+	bottom: 20px;
 	position: fixed;
 	right:0;
 	z-index: 99;
