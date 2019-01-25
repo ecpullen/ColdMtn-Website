@@ -71,6 +71,10 @@ header a:hover{
     height: 50px;
 }
 
+.dd#test{
+	width: 160px;
+}
+
 #search{
 	position:fixed;
 	right: 0px;
@@ -228,6 +232,12 @@ header a:hover{
 	border: 2px solid white;
 }
 
+.circle.curr:hover{
+	height: 10px;
+	width: 2%;
+	margin: 0px 2.5%;
+}
+
 .leftarr{
 	width: 10%;
 	top:50px;
@@ -256,6 +266,7 @@ footer{
 	background-color: rgba(0,0,0,.6);
 	color: white;
 	bottom: 0;
+	padding-left: 5px;
 }
 
 /*sidebar*/
