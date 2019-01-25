@@ -23,7 +23,7 @@
 
 .left{
 	width: 25%;
-    min-width: 279px;
+    /*min-width: 279px;*/
 	margin:0px;
 	float: left;
 	text-align: center;
