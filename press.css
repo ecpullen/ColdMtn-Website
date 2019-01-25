@@ -58,3 +58,7 @@ a:hover {
 	color: black;
 	color: #DDD;
 }
+
+a[href="press.php"]{
+	background: rgba(0, 0, 0, 0.2);
+}
