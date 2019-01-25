@@ -69,7 +69,6 @@ function head($stylesheet){
 		<div id="search">
 			<form>
 				<input type="text" name="search" placeholder="Search...">
-				<button type="submit">s</button>
 			</form>
 		</div>
 	</header>
