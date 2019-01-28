@@ -7,15 +7,15 @@ head("<script src=\"transition.js\"></script>");
 <div class="main">	
 	<div class="leftarr" onclick="decrPhoto()"></div>
 	<div class="rightarr" onclick="incrPhoto()"></div>
-	<img id="image_roulette" src="main/main05.jpg">
-	<img id="second_image" src="main/main05.jpg">
+	<img id="image_roulette" src="#">
+	<img id="second_image" src="#">
 	<div id="roulette_control">
 		<div class="triangle-left" onclick="decrPhoto()"></div>
 		<div id="circles">
 <?php 
 $files = scandir("main/");
-for($i = 2; $i < count($files); $i ++){
-?><div class="circle" onclick="setPhoto(<?=$i-1?>)"></div><?php 
+for($i = 3; $i < count($files); $i ++){
+?><div class="circle" onclick="setPhoto(<?=$i-2?>)"></div><?php 
 }
 ?>
 		</div>
