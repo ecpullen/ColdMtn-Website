@@ -2,16 +2,11 @@
 window.onload = temp;
 let timeout;
 let photoCount = 1;
+let numPhotos = 0;
 function temp(){
 	timeout = setTimeout(changePhoto, 5000);
 	circs = document.getElementById("circles");
-	for(i = 0; i < 13; i++){
-		let temp_circle = document.createElement("DIV");
-		let j = i;
-		temp_circle.className = "circle";
-		temp_circle.onclick = function() {setPhoto(j+1)};
-		circs.appendChild(temp_circle);
-	}
+	numPhotos = circs.childElementCount;
 	temp = circs.childNodes[1];
 	temp.classList.add("curr");
 	changePhoto();
@@ -22,7 +17,7 @@ function temp(){
 function changePhoto(){
 	let circs = document.getElementById("circles").childNodes;
 	circs[photoCount].classList.remove("curr");
-	photoCount = (photoCount) % 13 + 1;
+	photoCount = (photoCount) % numPhotos + 1;
 	circs[photoCount].classList.add("curr");
 	showImage();
 }
@@ -34,7 +29,7 @@ function incrPhoto(){
 function decrPhoto(){
 	let circs = document.getElementById("circles").childNodes;
 	circs[photoCount].classList.remove("curr");
-	photoCount = (photoCount + 11) % 13 + 1;
+	photoCount = (photoCount + 11) % numPhotos + 1;
 	circs[photoCount].classList.add("curr");
 	showImage();
 }
@@ -50,15 +45,26 @@ function setPhoto(x){
 
 function showImage(){
 	console.log("here");
-	$("#second_image").attr("src", $("#image_roulette").prop("src"));
-	$("#second_image").fadeIn(1);
-	$("#image_roulette").fadeOut(1,function(){
-		// alert("here");
-	$("#image_roulette").attr("src", "main/main"+leftPad(photoCount, 2) +".jpg");
-	$("#second_image").fadeOut(1000);
-	$("#image_roulette").fadeIn(1000);});
-	clearTimeout(timeout);
-	timeout = setTimeout(changePhoto, 5000);
+	$.ajax({
+        url: 'photoselect.php',
+        dataType: 'text',
+        type: 'POST',
+        data: {count:photoCount},
+        success: function(returndata){
+            $("#second_image").attr("src", $("#image_roulette").prop("src"));
+			$("#second_image").fadeIn(1);
+			$("#image_roulette").fadeOut(1,function(){
+				$("#image_roulette").attr("src", returndata);
+				$("#second_image").fadeOut(1000);
+				$("#image_roulette").fadeIn(1000);});
+				clearTimeout(timeout);
+				timeout = setTimeout(changePhoto, 5000);
+        },
+        error: function () {
+        	alert("An error occured");
+        }
+    });
+	
 }
 
 function checkKey(e){

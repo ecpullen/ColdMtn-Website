@@ -1,7 +1,7 @@
 <?php 
 include "headfoot.php";
 
-head("<link rel=\"stylesheet\" type=\"text/css\" href=\"Services.css\">");
+head("<link rel=\"stylesheet\" type=\"text/css\" href=\"services.css\">");
 ?>
 
 <div class="sidebar">
