@@ -1,3 +1,11 @@
+/*
+* File: history.css
+* Ethan Pullen & Dhruv Joshi
+* 2/2019
+*/
+
+
+/*--------Section Styling-------*/
 .section{
 	width: 100%;
 }
@@ -20,7 +28,9 @@
     margin: 0px;
     margin-top: 50px;
 }
+/*--------End Section Styling-------*/
 
+/*--------Left/Right Styling-------*/
 .left{
 	width: 25%;
     /*min-width: 279px;*/
@@ -43,7 +53,9 @@
 	width: 50%;
 	background-color: #B9B1A6;
 }
+/*--------End Left/Right Styling-------*/
 
+/*--------Row Styling-------*/
 .row:after {
   content: "";
   display: table;
@@ -59,52 +71,56 @@
 	border: 8px solid #3E4F61;
 }
 
-.row.space{
+.row.space{/*row between sections*/
 	height:50px;
 	background-color: #3E4F61;
 }
+/*--------End Row Styling-------*/
 
-.col1{
+/*--------Column Styling-------*/
+.col1{/*1/6 of row*/
 	float: left;
 	width: 16%;
 	height: 100%;
 	position:relative;
 }
 
-.col2{
+.col2{/*2/6 of row*/
 	float: left;
 	width: 33%;
 	height: 100%;
 	position:relative;
 }
 
-.col3{
+.col3{/*3/6 of row*/
 	float: left;
 	width: 50%;
 	height: 100%;
 	position:relative;
 }
 
-.col3 .third{
+.col3 .third{/*split col3 into 3 rows*/
 	margin-top: 13.5%;
 }
 
-.col4{
+.col4{/*4/6 of row*/
 	float: left;
 	width: 66%;
 	height: 100%;
 	position:relative;
 }
 
-.col4 .lowCap{
+.col4 .lowCap{/*caption on right of .col4*/
 	width: 50%;
 }
 
-.col4 .lowCap img{
+.col4 .lowCap img{/*image as caption on right of .col4*/
 	width: 100%;
 	margin: 0px;
 }
+/*--------End Column Styling-------*/
 
+/*--------Styling Items Occupying Rows-------*/
 .row img{
 	margin: 15px;
 	width: calc(100% - 15px);
@@ -121,7 +137,9 @@
 	left: 100%;
 	margin: 15px 15px;
 }
+/*--------End Styling Items Occupying Rows-------*/
 
+/*--------Change shade of current page-------*/
 a[href="aboutus.php"]{
 	background: rgba(0, 0, 0, 0.2);
 }
@@ -129,3 +147,4 @@ a[href="aboutus.php"]{
 .sidebar a[href="history.php"] span.line{
 	background: rgba(0, 0, 0, 0.2);
 }
+/*--------End Change shade of current page-------*/
