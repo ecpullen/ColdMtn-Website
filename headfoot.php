@@ -14,6 +14,7 @@ function head($stylesheet){
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Karla|Montserrat">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="scroll.js"></script>
+	<script src="search.js"></script>
 	<?=$stylesheet?>
 </head>
 
@@ -23,15 +24,6 @@ function head($stylesheet){
 		<div class="dd" id="home">
 			<a class="mainlink" href="index.php"><img src="images/logo.svg"></a>
 		</div>
-		<!-- <div class="dd">
-			<a class="mainlink" href="">Our Work</a>
-				<div class="d-content">
-					<a href="">Kitchens</a>
-					<a href="">Landscape</a>
-					<a href="">Exteriors</a>
-					<a href="">Interiors</a>
-				</div>
-		</div> -->
 		<div class="dd" id="about">
 			<a class="mainlink" href="aboutus.php">About Us</a>
 				<div class="d-content">
@@ -77,10 +69,10 @@ function head($stylesheet){
 		<div class="dd" id="contact">
 			<a class="mainlink" href="contactus.php">Contact Us</a>
 		</div>
-		<div id="search">
-			<form>
-				<input type="text" name="search" placeholder="Search...">
-			</form>
+		<div class="dd" id="search">
+			<input id="searchbar" type="text" name="search" placeholder="Search...">
+				<div class="d-content" id="searchContent">
+				</div>
 		</div>
 	</header>
 <?php

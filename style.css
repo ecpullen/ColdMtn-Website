@@ -148,6 +148,20 @@ header a:hover{
 	top: 50px;
 }
 
+#searchContent{
+	width: 500px;
+	right: 30px;
+	top:45px;
+}
+
+#searchContent p{
+	margin: 0;
+}
+
+.test{
+	font-size: 12pt;
+	color: #B9B1A6;
+}
 
 .d-content a{
 	float: none;
@@ -170,7 +184,7 @@ header a:hover{
 	display:block;
 }
 
-.dd:hover{
+.dd:hover not(#search){
 	background: rgba(0, 0, 0, 0.6);
 }
 

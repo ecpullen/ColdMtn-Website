@@ -15,7 +15,7 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"testimonials.css\">");
 	catch(PDOException $e){
 		die($e);
 	}
-
+	
 	foreach ($rows as $row) {
 ?>
 	<a href="<?=$row["link"]?>"><span class="line"><?=$row["person1"]?></span> 
