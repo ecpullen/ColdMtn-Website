@@ -102,8 +102,11 @@
 ?>
 			<div class="entry" onclick="remtest('<?=$row['id']?>')">
 				<p>
+<<<<<<< HEAD
 					<span>Testimonial: <?=htmlspecialchars($row["person1"])?> <?=htmlspecialchars($row["person2"])?> <?=htmlspecialchars($row["title"])?><br /></span>
 					<?=substr(htmlspecialchars($row["testimony"]),0,160)?> ...
+=======
+>>>>>>> d71516d58dacfb269a1374f553f4323044837051
 				</p>
 			</div>
 <?php
