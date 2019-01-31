@@ -159,6 +159,7 @@ header a:hover{
 #searchContent{
 	width: 500px;
 	right: 30px;
+	top:40px;
 }
 
 #searchContent p{
@@ -168,6 +169,18 @@ header a:hover{
 .test{
 	font-size: 12pt;
 	color: #B9B1A6;
+}
+
+#searchContent img{
+	height: 60px;
+	width:75px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+#searchContent .image p{
+	display: inline-block;
+	width: 400px;
 }
 
 .d-content a{
