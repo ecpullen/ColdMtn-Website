@@ -1,3 +1,20 @@
+<?php 
+	session_start();
+	try{
+		$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
+			"ecpull21",
+			"qyu7hbhsr");
+		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$rows = $db->query("select * from admins where password='".addslashes($_SESSION["password"])."' and username='".addslashes($_SESSION["username"])."';");
+		if($rows->rowCount() == 0){
+			die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
+		}
+	}
+	catch(PDOException $e){
+		die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
