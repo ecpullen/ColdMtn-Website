@@ -36,6 +36,11 @@
     margin: 0px;
     padding-top: 50px;
 }
+
+.map,.text{
+	width: 40%;
+	display: inline-block;
+}
 /*--------End of Section Styling-------*/
 
 /*--------Change shade of current page-------*/
@@ -43,3 +48,20 @@ a[href="contactus.php"]{
 	background: rgba(0, 0, 0, 0.2);
 }
 /*--------End Change shade of current page-------*/
+
+/*--------Map Style-------*/
+.mapouter{
+	text-align:right;
+	height:200px;
+	width:250px;
+	margin-left: 20%;
+	margin-top: 40px;
+}
+
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:200px;
+	width:250px;
+}
+/*--------End Map Style-------*/
