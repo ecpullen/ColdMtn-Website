@@ -89,15 +89,23 @@ header a:hover{
 }
 
 #search{
+	width: 170px;
 	position:fixed;
 	right: 0px;
 	top: 10px;
 	padding-right: 30px;
 }
 
-#search button {
-	margin: 0px;
-	width: 10px;
+#searchbar {
+	width: 100%;
+	color: #CCC;
+	background-color: rgba(0, 0, 0, 0.4);
+	border:0px solid black;
+	padding: 8px;
+	padding-left: 18px; 
+	padding-right: 4px; 
+	border-radius: 20px;
+	font-size: 10pt;
 }
 
 
