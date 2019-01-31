@@ -130,7 +130,7 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"history.css\">");
 					<p>Summary description of the Grassi Residence and sustainability process from The New York Times Magazine, 1996<br />Elliott + Elliott Architectue</p>
 				</div>
 				<div class="col3">
-					<img src="history/history-cambell-annex.jpg">
+					<img src="history/history-campbell-annex.jpg">
 					<p>
 						Campbell Annex, Rockport, 1998<br />Bernhard & Priestley Architecture<br />Photo: Brian Vanden Brink
 					</p>
