@@ -51,7 +51,7 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"testimonials.css\">");
 ?>
 		<div class="loc" id='<?=$row["id"]?>'></div>	
 		<div class="testimonial">
-			<p class="testimony"><?=htmlspecialchars($row["testimony"])?></p>
+			<p class="testimony"><?=$row["testimony"]?></p>
 			<p class = "client">
 				<span class="line"><?=htmlspecialchars($row["person1"])?></span> 
 <?php 
