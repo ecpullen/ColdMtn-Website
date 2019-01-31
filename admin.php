@@ -31,14 +31,20 @@
 </head>
 <body>
 	<h1>Welcome, <?=$_POST["username"]?></h1>
-	<a class="third" href="adminhome.php">
-		Add Image to home page
-	</a>
-	<a class="third" href="adminphoto.php">
-		Add Image to search database
-	</a>
-	<a class="third" href="admintest.php">
-		Add Testimonial to testimonials
-	</a>
+	<div class="third left">	
+		<a href="adminhome.php">
+			Add Image to home page
+		</a>
+	</div>
+	<div class="third center">	
+		<a href="adminphoto.php">
+			Add Image to search database
+		</a>
+	</div>
+	<div class="third right">	
+		<a href="admintest.php">
+			Add Testimonial to testimonials
+		</a>
+	</div>
 </body>
 </html>

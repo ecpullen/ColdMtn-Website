@@ -63,14 +63,38 @@ header a{
 	border: none;
 	outline: none;
 }
-
 /*----------End Navigation Bar Style--------*/
+
+
+/*----------Admin.php Navigation page Style--------*/
+.left, .center, .right {
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #5C6164;
+
+
+}
+
+.left a, .center a, .right a{
+
+	display: block;
+	top: 50%;
+	height: 100%;
+	width: 100%;
+	/*position: relative;*/
+	/*background: white;*/
+	/*left: 50%;*/
+}
+/*----------End Admin.php Navigation page Style--------*/
+
+
 
 .third{
 	width: calc(33% - 40px);
-	height: 100%;
+	height: calc(100% - 150px);
 	float: left;
 	padding:20px;
+	margin-bottom: 0px;
 }
 
 /*----------Home Style--------*/
