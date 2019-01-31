@@ -1,8 +1,8 @@
 <?php
 /*
 * File: headfoot.php
-* Ethan Pullen & Dhruv Joshi
-* 2/2019
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
 */
 function head($stylesheet){
 ?>
