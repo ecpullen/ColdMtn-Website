@@ -52,7 +52,8 @@ function head($stylesheet){
 
 	foreach ($rows as $row) {
 ?>
-					<a href="<?=$row["link"]?>"><span class="line"><?=htmlspecialchars($row["person1"])?></span> 
+					<a href="<?=$row["link"]?>"><span class="line">
+						<?=htmlspecialchars($row["person1"])?></span> 
 <?php 
 		if($row["person2"]){ 
 ?>

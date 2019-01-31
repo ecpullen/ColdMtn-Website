@@ -16,7 +16,11 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"history.css\">");
 		<div class="left"><h1></h1></div>
 		<div class="right">
 			<h1>History</h1>
-			<p>Our work over the past thirty years includes historic preservation as well as the construction of significant and distinctive residences on the coast of Maine. Below are representative and significant projects that we have been involved with in midcoast Maine and beyond.</p>
+			<p>Our work over the past thirty years includes historic preservatio
+				n as well as the construction of significant and distinctive res
+				idences on the coast of Maine. Below are representative and sign
+				ificant projects that we have been involved with in midcoast Mai
+				ne and beyond.</p>
 		</div>
 	</div>
 
@@ -29,7 +33,8 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"history.css\">");
 			<div class="row">
 				<div class="col4">
 					<img src="history/history-crew-bw.jpg" alt="crew bw">
-					<p class="lowCap">Cold Mountain on the job, 1978<br />Photo: Joe Swayze</p>
+					<p class="lowCap">Cold Mountain on the job, 1978<br />Photo:
+						 Joe Swayze</p>
 				</div>
 				<div class="col2">
 					<img src="history/history-andre-rheault.jpg" alt="andre rheault">
@@ -40,13 +45,16 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"history.css\">");
 				<div class="col2">
 					<img src="history/history-brick-restoration1.jpg" alt="brick restoration">
 					<p>
-						Restoration of the circa 1890 First National Bank Building on Main Street in Belfast, 1978 <br />Christopher Glass, Architect
+						Restoration of the circa 1890 First National Bank Building on Main Street
+						 in Belfast, 1978 <br />Christopher Glass, Architect
 					</p>
 				</div>
 				<div class="col2">
 					<img src="history/history-brick-restoration2.jpg" alt="brick restoration">
 					<p>
-						Restoration and conversion of the Rockport Brick Block (formerly Carrol Thayer Berry Studio) into a residential townhouse, 1979 <br />Christopher Glass, Architect<br /><br />
+						Restoration and conversion of the Rockport Brick Block (formerly Carrol 
+						Thayer Berry Studio) into a residential townhouse, 1979 <br />Christopher
+						 Glass, Architect<br /><br />
 					</p>
 				</div>
 				<div class="col2">
@@ -72,7 +80,8 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"history.css\">");
 				</div>
 				<div class="col2">
 					<img src="history/history-rockport-church.jpg" alt="rockport church">
-					<p>1870 Rockport Church Adaptive Reuse Project, 1992<br />Lawrence Cheng, Cambridge Seven</p>
+					<p>1870 Rockport Church Adaptive Reuse Project, 1992<br />Lawrence Cheng, 
+						Cambridge Seven</p>
 				</div>
 			</div>
 			<div class="row">
@@ -85,7 +94,8 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"history.css\">");
 				<div class="col3">
 					<img src="history/history-liberty-redmond-house.jpg" alt="redmond house">
 					<p>
-						Liberty Redmond House, Islesboro, 1993<br />John Silverio, Architect<br />Photo: Brian Vanden Brink
+						Liberty Redmond House, Islesboro, 1993<br />John Silverio, Architect<br />
+						Photo: Brian Vanden Brink
 					</p>
 				</div>
 			</div>
@@ -97,7 +107,9 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"history.css\">");
 				<div class="col4">
 					<img src="history/history-farnsworth-museum.jpg" alt="farnsworth museum">
 					<p class="lowCap">
-						Comprehensive renovation of the<br />Farnsworth Museum facility including<br />electrical, mechanical and expansion to<br />Main Street in Rockland, 1995<br />Photo: Brian Vanden Brink
+						Comprehensive renovation of the<br />Farnsworth Museum facility including
+						<br />electrical, mechanical and expansion to<br />Main Street in 
+						Rockland, 1995<br />Photo: Brian Vanden Brink
 					</p>
 				</div>
 				<div class="col2">
@@ -127,7 +139,8 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"history.css\">");
 			<div class="row">
 				<div class="col3">
 					<img src="history/history-grassi-article.jpg" alt="grassi article">
-					<p>Summary description of the Grassi Residence and sustainability process from The New York Times Magazine, 1996<br />Elliott + Elliott Architectue</p>
+					<p>Summary description of the Grassi Residence and sustainability 
+						process from The New York Times Magazine, 1996<br />Elliott + Elliott Architectue</p>
 				</div>
 				<div class="col3">
 					<img src="history/history-campbell-annex.jpg" alt="campbell annex">

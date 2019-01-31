@@ -11,7 +11,9 @@
 			"ecpull21",
 			"qyu7hbhsr");
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$rows = $db->query("select * from admins where password='".addslashes($_SESSION["password"])."' and username='".addslashes($_SESSION["username"])."';");
+		$rows = $db->query("select * from admins where password='".
+			$db->quote($_SESSION["password"])."' and username='".
+			$db->quote($_SESSION["username"])."';");
 		if($rows->rowCount() == 0){
 			die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
 		}
@@ -105,7 +107,9 @@
 ?>
 			<div class="entry" onclick="remtest('<?=$row['id']?>')">
 				<p>
-					<span>Testimonial: <?=htmlspecialchars($row["person1"])?> <?=htmlspecialchars($row["person2"])?> <?=htmlspecialchars($row["title"])?><br /></span>
+					<span>Testimonial: <?=htmlspecialchars($row["person1"])?> 
+					<?=htmlspecialchars($row["person2"])?> 
+					<?=htmlspecialchars($row["title"])?><br /></span>
 					<?=substr(htmlspecialchars($row["testimony"]),0,160)?> ...
 				</p>
 			</div>

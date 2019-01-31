@@ -20,7 +20,9 @@
 				"ecpull21",
 				"qyu7hbhsr");
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$rows = $db->query("select * from admins where password='".addslashes($_POST["password"])."' and username='".addslashes($_POST["username"])."';");
+			$rows = $db->query("select * from admins where password='".
+				$db->quote($_POST["password"])."' and username='".
+				$db->quote($_POST["username"])."';");
 			if($rows->rowCount() == 0){
 				die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
 			}
@@ -38,7 +40,9 @@
 				"ecpull21",
 				"qyu7hbhsr");
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$rows = $db->query("select * from admins where password='".addslashes($_SESSION["password"])."' and username='".addslashes($_SESSION["username"])."';");
+			$rows = $db->query("select * from admins where password='".
+				$db->quote($_SESSION["password"])."' and username='".
+				$db->quote($_SESSION["username"])."';");
 			if($rows->rowCount() == 0){
 				die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
 			}
