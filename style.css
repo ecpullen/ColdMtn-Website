@@ -1,3 +1,10 @@
+/*
+* File: style.css
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
+
+/*--------Genera Styling-------*/
 html{
 	height: 100%;
 	min-width: 700px;
@@ -10,13 +17,16 @@ body {
 	font-family: 'Karla', sans-serif;
 }
 
+/*--------General Styling-------*/
+
+/*--------Image Roulette Styling-------*/
 .main{
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
 }
 
-#image_roulette,#second_image {
+#image_roulette, #second_image {
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -24,6 +34,21 @@ body {
 	left: 0;
 	right: 0;
 }
+
+#roulette_control{
+	text-align: center;
+	position: fixed;
+	width:40%;
+	left: 30%;
+	top:90%;
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+}
+
+#circles{
+	display: inline-block;
+	width: 80%;
+}
+/*--------End Image Roulette Styling-------*/
 
 .head{
 	position: fixed;
@@ -157,6 +182,7 @@ header a:hover{
 }
 
 #searchContent{
+	background-color: rgba(0, 0, 0, 0.5);
 	width: 500px;
 	right: 30px;
 	top:40px;
@@ -166,11 +192,12 @@ header a:hover{
 	margin: 0;
 }
 
-.test{
+.test {
 	font-size: 12pt;
 	color: #B9B1A6;
 }
 
+/*--------Search Bar Styling-------*/
 #searchContent img{
 	height: 60px;
 	width:75px;
@@ -182,6 +209,8 @@ header a:hover{
 	display: inline-block;
 	width: 400px;
 }
+/*--------End Search Bar Styling-------*/
+
 
 .d-content a{
 	float: none;
@@ -217,19 +246,7 @@ header a:hover{
     padding:.5%;
 }
 
-#roulette_control{
-	text-align: center;
-	position: fixed;
-	width:40%;
-	left: 30%;
-	top:90%;
-	/*background-color: rgba(0, 0, 0, 0.2);*/
-}
 
-#circles{
-	display: inline-block;
-	width: 80%;
-}
 
 .triangle-left {
 	display: inline-block;
@@ -326,7 +343,7 @@ footer{
 	padding-left: 5px;
 }
 
-/*sidebar*/
+/*--------Sidebar Styling-------*/
 .sidebar{
 	width: 160px;
 	float: left;
@@ -360,3 +377,4 @@ footer{
 	display: block;
 	padding-left: 5px;
 }
+/*--------End Sidebar Styling-------*/

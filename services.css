@@ -1,3 +1,10 @@
+/*
+* File: services.css
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
+
+/*--------Section Styling-------*/
 .services{
 	width: 60%;
 	margin: 0px 20%;
@@ -26,7 +33,9 @@
 	margin-left:15%;
 	margin-bottom: 50px;
 }
+/*--------End Section Styling-------*/
 
+/*--------Change shade of current page-------*/
 a[href="aboutus.php"]{
 	background: rgba(0, 0, 0, 0.2);
 }
@@ -34,3 +43,4 @@ a[href="aboutus.php"]{
 .sidebar a[href="services.php"] span.line{
 	background: rgba(0, 0, 0, 0.2);
 }
+/*--------End Change shade of current page-------*/

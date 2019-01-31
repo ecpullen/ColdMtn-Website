@@ -1,3 +1,10 @@
+/*
+* File: contactus.css
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
+
+/*--------Section Styling-------*/
 .contact{
 	width: 60%;
 	margin: 0px 20%;
@@ -29,7 +36,10 @@
     margin: 0px;
     padding-top: 50px;
 }
+/*--------End of Section Styling-------*/
 
+/*--------Change shade of current page-------*/
 a[href="contactus.php"]{
 	background: rgba(0, 0, 0, 0.2);
 }
+/*--------End Change shade of current page-------*/
