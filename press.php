@@ -1,6 +1,10 @@
 <?php 
 include "headfoot.php";
-
+/*
+* File: press.php
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
 head("<link rel=\"stylesheet\" type=\"text/css\" href=\"press.css\">");
 ?>
 <div class="press_page">

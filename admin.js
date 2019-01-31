@@ -1,7 +1,10 @@
-$(document).ready(function(){
-	
-});
+/*
+* File: admin.js
+* Ethan Pullen & Dhruv Joshi
+* 2/2019
+*/
 
+//handles removing an image from main
 function rem(file){
 	$.ajax({url:"rem.php",
 		data:{"file":file},
@@ -16,6 +19,7 @@ function rem(file){
 		}});
 }
 
+//handles removing image from database
 function remDBPhoto(file){
 	$.ajax({url:"rem.php",
 		data:{"img":file},
@@ -30,6 +34,7 @@ function remDBPhoto(file){
 		}});
 }
 
+//handles removing testimony from database
 function remtest(id){
 	$.ajax({url:"rem.php",
 		data:{"id":id},

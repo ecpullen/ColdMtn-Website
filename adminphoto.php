@@ -1,5 +1,11 @@
 <?php 
 	session_start();
+/*
+* File: adminphoto.php
+* Ethan Pullen & Dhruv Joshi
+* 2/2019
+*/ 
+	//validate the admin
 	try{
 		$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
 			"ecpull21",
@@ -42,6 +48,7 @@
 </header>
 
 <?php 
+	//if a file is sent, add it to adminImg and add the link and description to the database
 	try{
 		$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
 				"ecpull21",

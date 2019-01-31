@@ -3,6 +3,8 @@
 * Ethan Pullen & Dhruv Joshi
 * 2/2019
 */
+
+//uses ajax to get the mysql results of search
 $(document).ready(function(){
 	$("#searchbar").on('input',function(){
 		$.ajax({url:"search.php",

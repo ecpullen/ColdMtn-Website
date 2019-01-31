@@ -1,5 +1,11 @@
 <?php 
 	session_start();
+/*
+* File: admintest.php
+* Ethan Pullen & Dhruv Joshi
+* 2/2019
+*/ 
+	//validate the admin
 	try{
 		$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
 			"ecpull21",
@@ -44,10 +50,12 @@
 
 <?php 
 	try{
+
 		$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
 				"ecpull21",
 				"qyu7hbhsr");
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		//if a testimony is sent add it to the database
 		if(isset($_POST["person1"])){
 			$names = explode(" ", $_POST["person1"]);
 			$id = "";
@@ -63,7 +71,7 @@
 			$db->query("insert into testimonies (id,person1,person2,title,testimony,link) values 
 				('$id','$_POST[person1]','$_POST[person2]','$_POST[title]','".addslashes($_POST['testimony'])."','testimonials.php#$id');");
 		}
-
+		//find all testimonials from the database
 		$rows = $db->query("select * from testimonies");
 	}
 	catch(PDOException $e){

@@ -1,4 +1,9 @@
-<?php 
+<?php
+/*
+* File: testimonials.php
+* Ethan Pullen & Dhruv Joshi
+* 2/2019
+*/ 
 include "headfoot.php";
 
 head("<link rel=\"stylesheet\" type=\"text/css\" href=\"testimonials.css\">");
@@ -6,6 +11,7 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"testimonials.css\">");
 <div class="sidebar">
 <?php 
 	try{
+		// search the testimony database for all testimonies
 		$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
 			"ecpull21",
 			"qyu7hbhsr");
@@ -15,7 +21,7 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"testimonials.css\">");
 	catch(PDOException $e){
 		die($e);
 	}
-	
+	// for evvery testimony add it to sidebar
 	foreach ($rows as $row) {
 ?>
 	<a href="<?=$row["link"]?>"><span class="line"><?=$row["person1"]?></span> 
@@ -29,6 +35,7 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"testimonials.css\">");
 							<span class="title"><?=$row["title"]?></span></a>
 <?php
 	}
+	// $rows can only be traversed once without calling execute();
 	$rows->execute();
 ?>
 </div>

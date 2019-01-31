@@ -1,4 +1,10 @@
+/*
+* File: search.js
+* Ethan Pullen & Dhruv Joshi
+* 2/2019
+*/
 
+//handles horizontal scroll of the header
 $(document).ready(function(){
 	$(document).scroll(function(e){
 		let left = $(window).scrollLeft();

@@ -1,6 +1,10 @@
 <?php 
 include "headfoot.php";
-
+/*
+* File: index.php
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
 head("<script src=\"transition.js\"></script>");
 ?>
 
