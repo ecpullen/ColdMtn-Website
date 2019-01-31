@@ -24,6 +24,24 @@
 			die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
 		}
 	}
+	elseif (isset($_SESSION["username"])&&isset($_SESSION["password"])) {
+		try{
+			$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
+				"ecpull21",
+				"qyu7hbhsr");
+			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$rows = $db->query("select * from admins where password='".addslashes($_SESSION["password"])."' and username='".addslashes($_SESSION["username"])."';");
+			if($rows->rowCount() == 0){
+				die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
+			}
+		}
+		catch(PDOException $e){
+			die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
+		}
+	}
+	else{
+		die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
+	}
 ?>
 	<link rel="stylesheet" type="text/css" href="admin.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

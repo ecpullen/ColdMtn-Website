@@ -24,7 +24,24 @@
 	<script src="admin.js"></script>
 </head>
 <body>
-	<?php 
+
+<header class="nav_bar">
+	<a href="adminhome.php">
+		Add Image to Home Page
+	</a>
+	<a href="adminphoto.php">
+		Add Image to Search Database
+	</a>	
+	<a href="admintest.php">
+		Add a Testimonial
+	</a>
+	<form id="logout" action="logout.php">
+		<input id="logout_button" type="submit" value="Log out">
+	</form>	
+
+</header>
+
+<?php 
 	try{
 		$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
 				"ecpull21",

@@ -1,7 +1,8 @@
 <?php
-   session_destroy();
+	session_start();
+ 	session_destroy();
 ?>
-DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<!-- File: logout.php
