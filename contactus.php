@@ -1,6 +1,10 @@
 <?php 
 include "headfoot.php";
-
+/*
+* File: contactus.php
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
 head("<link rel=\"stylesheet\" type=\"text/css\" href=\"contactus.css\">");
 ?>
 

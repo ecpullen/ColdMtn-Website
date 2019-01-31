@@ -1,6 +1,13 @@
 <?php
 	session_start();
  	session_destroy();
+ /*
+* File: logout.php
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
+
+// removes all session variables and displays the login page
 ?>
 <!DOCTYPE html>
 <html>

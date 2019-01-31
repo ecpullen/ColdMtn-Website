@@ -4,6 +4,9 @@
 * Authors: Ethan Pullen & Dhruv Joshi
 * Date: 2/2019
 */
+
+//header to be used for all php pages on website with $stylesheet 
+//as a stylesheet or javascript code.
 function head($stylesheet){
 ?>
 <!DOCTYPE html>

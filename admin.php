@@ -1,5 +1,10 @@
 <?php 
 	session_start();
+/*
+* File: admin.php
+* Ethan Pullen & Dhruv Joshi
+* 2/2019
+*/ 
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +12,9 @@
 <head>
 	<title>Admin Access</title>
 <?php 
+	// determines which point the page is being accessed from.
 	if(isset($_POST["username"])&&isset($_POST["password"])){
+		//came from admin.html so needs to setup session
 		try{
 			$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
 				"ecpull21",
@@ -25,6 +32,7 @@
 		}
 	}
 	elseif (isset($_SESSION["username"])&&isset($_SESSION["password"])) {
+		//came to the page for a second time so uses session data
 		try{
 			$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
 				"ecpull21",
@@ -40,6 +48,7 @@
 		}
 	}
 	else{
+		//neigher session or post were stored so someone coming from a random site.
 		die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
 	}
 ?>

@@ -1,5 +1,11 @@
 <?php 
 	session_start();
+/*
+* File: adminhome.php
+* Ethan Pullen & Dhruv Joshi
+* 2/2019
+*/ 
+	//make sure the admin is logged in
 	try{
 		$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
 			"ecpull21",
@@ -43,6 +49,7 @@
 
 
 <?php 
+	//if a file was sent and credentials work add it to the main page
 	if( $_FILES['file']['name'] != "" ){
 	   $destFile = "main/".$_FILES['file']['name'];
 		move_uploaded_file( $_FILES['file']['tmp_name'], $destFile );

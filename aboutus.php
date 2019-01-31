@@ -1,6 +1,10 @@
-<?php 
+<?php
 include "headfoot.php";
-
+/*
+* File: aboutus.php
+* Ethan Pullen & Dhruv Joshi
+* 2/2019
+*/ 
 head("<link rel=\"stylesheet\" type=\"text/css\" href=\"aboutus.css\">");
 ?>
 <div class="sidebar">
