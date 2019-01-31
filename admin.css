@@ -198,7 +198,6 @@ button.delete{
 	display: inline-block;
 }
 
-
 #images p{
 	margin: 0px;
 	margin-left: 15px;
@@ -219,6 +218,30 @@ button.delete{
 /*---------Testimony Style--------*/
 #testimony{
 	background:#AAF;
+}
+
+#testimonial{
+	border: 1px solid #5C6164;
+	padding: 3px;
+	overflow-y: scroll;
+	height: 300px;
+	margin: 0px 50px;
+}
+
+#testimonial p{
+	margin: 0px;
+	margin-left: 15px;
+	display: inline-block;
+
+}
+
+#testimonial .entry{
+	padding: 5px;
+	display: block;
+}
+
+#testimonial .entry:hover{
+	background-color: #ABD2D9;
 }
 
 #test_form {

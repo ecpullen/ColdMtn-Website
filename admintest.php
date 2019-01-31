@@ -96,14 +96,14 @@
 			<br />
 			<input type="submit" name="submit">
 		</form>
-		<div id="images">
+		<div id="testimonial">
 <?php 
 	foreach ($rows as $row) {
 ?>
-			<div onclick="remtest('<?=$row['id']?>')">
+			<div class="entry" onclick="remtest('<?=$row['id']?>')">
 				<p>
-					<span class="test">Testimonial: <?=htmlspecialchars($row["person1"])?> <?=htmlspecialchars($row["person2"])?> <?=htmlspecialchars($row["title"])?><br /></span>
-					<?=substr(htmlspecialchars($row["testimony"]),0,97)?> ...
+					<span>Testimonial: <?=htmlspecialchars($row["person1"])?> <?=htmlspecialchars($row["person2"])?> <?=htmlspecialchars($row["title"])?><br /></span>
+					<?=substr(htmlspecialchars($row["testimony"]),0,160)?> ...
 				</p>
 			</div>
 <?php
