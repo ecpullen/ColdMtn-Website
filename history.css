@@ -48,8 +48,8 @@
 
 .right{
 	float: left;
-	margin-right: calc(20% - 15px);
-	width: 50%;
+    margin-right: calc(10% - 15px);
+    width: 60%;
 	background-color: #B9B1A6;
 }
 /*--------End Left/Right Styling-------*/
