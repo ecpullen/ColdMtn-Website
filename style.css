@@ -285,7 +285,7 @@ header a:hover{
 #searchbar {
 	width: 100%;
 	color: #CCC;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.8);
 	border:0px solid black;
 	padding: 8px;
 	padding-left: 18px; 
@@ -294,8 +294,12 @@ header a:hover{
 	font-size: 10pt;
 }
 
+::placeholder {
+  color: white;
+}
+
 #searchContent{
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 	width: 500px;
 	right: 30px;
 	top:40px;

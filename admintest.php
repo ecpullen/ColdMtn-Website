@@ -87,7 +87,7 @@
 			Person 2:
 			<input type="text" name="person2">
 			<br />
-			Title(Owner):
+			Title:
 			<input type="text" name="title">
 			<br />
 			Testimony:
