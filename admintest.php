@@ -80,7 +80,7 @@
 ?>
 	<div id="test">
 		<h1>Add testimonial to testimonials</h1>
-		<form action="admintest.php" method="POST" id="db">
+		<form action="admintest.php" method="POST" id="test_form">
 			Person 1:
 			<input type="text" name="person1" required>
 			<br />

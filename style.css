@@ -277,6 +277,10 @@ header a:hover{
 	top: 10px;
 	padding-right: 30px;
 }
+.test{
+	font-size: 12pt;
+	color: #B9B1A6;
+}
 
 #searchbar {
 	width: 100%;

@@ -221,6 +221,14 @@ button.delete{
 	background:#AAF;
 }
 
+#test_form {
+	padding: 8px;
+	width: 40%;
+	border: 1px solid #5C6164;
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+
 #testimony div{
 	width: 24%;
 	height:200px;
