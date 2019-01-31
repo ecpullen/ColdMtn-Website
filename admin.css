@@ -12,6 +12,13 @@ html,body{
 	height: 100%;
 	margin: 0px;
 }
+
+.third{
+	width: calc(33%);
+	height: calc(100% - 100px);
+	float: left;
+	margin-bottom: 0px;
+}
 /*----------End General Style--------*/
 
 /*----------Navigation Bar Style--------*/
@@ -71,31 +78,43 @@ header a{
 	text-align: center;
 	vertical-align: middle;
 	border: 1px solid #5C6164;
-
-
 }
 
 .left a, .center a, .right a{
 
-	position: relative;
-	top: 40%;
+	display: block;
+	padding-top: 50%;
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
 	font-size: 30px;
 	color: #5C6164;
 }
-/*----------End Admin.php Navigation page Style--------*/
 
-
-
-.third{
-	width: calc(33% - 40px);
-	height: calc(100% - 150px);
-	float: left;
-	padding:20px;
-	margin-bottom: 0px;
+.left{
+	background: #D6CABC;
 }
+
+.center{
+	background: #F0EFEA;
+}
+
+.right{
+	background: #EAE4DC;
+}
+
+.left:hover{
+	background: #C6BAAC;
+}
+
+.center:hover{
+	background: #E0DFDA;
+}
+
+.right:hover{
+	background: #DAD4CC;
+}
+/*----------End Admin.php Navigation page Style--------*/
 
 /*----------Home Style--------*/
 h1 {
@@ -141,10 +160,35 @@ button.delete{
 /*----------End Home Style--------*/
 
 /*----------Database Style--------*/
+
+#database h1 {
+	color: #5C6164;
+	margin-left: 50px;
+}
+
+#database_file_chooser, #database_description{
+	margin-bottom: 10px; 
+}
+
+#database_form{
+	padding: 8px;
+	width: 40%;
+	border: 1px solid #5C6164;
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+
+#database .warning{
+	color: red;
+	margin-left: 50px;
+}
+
 #images{
+	border: 1px solid #5C6164;
+	padding: 3px;
 	overflow-y: scroll;
 	height: 300px;
-	margin: 50px;
+	margin: 0px 50px;
 }
 
 #images img{
@@ -154,16 +198,21 @@ button.delete{
 	display: inline-block;
 }
 
+
 #images p{
+	margin: 0px;
+	margin-left: 15px;
 	display: inline-block;
+
 }
 
-#images div{
+#images .entry{
+	padding: 5px;
 	display: block;
 }
 
-#images div:hover{
-	background-color: #F33;
+#images .entry:hover{
+	background-color: #ABD2D9;
 }
 /*----------End Database Style--------*/
 

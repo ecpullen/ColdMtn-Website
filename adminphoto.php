@@ -70,21 +70,22 @@
 ?>
 	<div id="database">
 		<h1>Add image to database</h1>
-		<form action="adminphoto.php" method="POST" enctype="multipart/form-data" id="database">
-			<input type="file" name="file" size="50">
+		<form action="adminphoto.php" method="POST" enctype="multipart/form-data" id="database_form">
+			<input type="file" name="file" size="50" id="database_file_chooser">
 			<br />
 			Description:
 			<br />
-			<textarea rows="6" cols="35" name="description" placeholder="Description"></textarea>
+			<textarea rows="6" cols="35" name="description" placeholder="Description" id="database_description"></textarea>
 			<br />
-			<input type="submit" name="submit" value="Upload File">
+			<input type="submit" name="submit" value="Upload File" id="database_upload">
 		</form>
+		<p class="warning">Click on any entry below to delete</p>
 		<div id="images">
 <?php 
 	$rows = $db->query("select * from Search");
 	foreach ($rows as $row) {
 ?>
-			<div onclick="remDBPhoto('<?=$row['link']?>')">
+			<div class="entry" onclick="remDBPhoto('<?=$row['link']?>')">
 				<img src="<?=$row['link']?>"><p><?=$row['description']?></p>
 			</div>
 <?php
