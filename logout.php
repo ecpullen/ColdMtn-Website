@@ -1,8 +1,10 @@
-
-<!DOCTYPE html>
+<?php
+   session_destroy();
+?>
+DOCTYPE html>
 <html>
 <head>
-	<!-- File: admin.html
+	<!-- File: logout.php
 	Ethan Pullen & Dhruv Joshi
 	2/2019-->
 	<title>Admin Login</title>
