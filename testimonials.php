@@ -24,15 +24,15 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"testimonials.css\">");
 	// for evvery testimony add it to sidebar
 	foreach ($rows as $row) {
 ?>
-	<a href="<?=$row["link"]?>"><span class="line"><?=$row["person1"]?></span> 
+	<a href="<?=$row["link"]?>"><span class="line"><?=htmlspecialchars($row["person1"])?></span> 
 <?php 
 		if($row["person2"]){ 
 ?>
-							<span class="line"><?=$row["person2"]?></span> 
+							<span class="line"><?=htmlspecialchars($row["person2"])?></span> 
 <?php 	
 		} 
 ?>
-							<span class="title"><?=$row["title"]?></span></a>
+							<span class="title"><?=htmlspecialchars($row["title"])?></span></a>
 <?php
 	}
 	// $rows can only be traversed once without calling execute();
@@ -51,17 +51,17 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"testimonials.css\">");
 ?>
 		<div class="loc" id='<?=$row["id"]?>'></div>	
 		<div class="testimonial">
-			<p class="testimony"><?=$row["testimony"]?></p>
+			<p class="testimony"><?=htmlspecialchars($row["testimony"])?></p>
 			<p class = "client">
-				<span class="line"><?=$row["person1"]?></span> 
+				<span class="line"><?=htmlspecialchars($row["person1"])?></span> 
 <?php 
 		if($row["person2"]){ 
 ?>
-				<span class="line"><?=$row["person2"]?></span> 
+				<span class="line"><?=htmlspecialchars($row["person2"])?></span> 
 <?php 	
 		} 
 ?>
-				<span class="title"><?=$row["title"]?></span></a>
+				<span class="title"><?=htmlspecialchars($row["title"])?></span></a>
 			</p>	
 		</div>
 <?php

@@ -52,15 +52,15 @@ function head($stylesheet){
 
 	foreach ($rows as $row) {
 ?>
-					<a href="<?=$row["link"]?>"><span class="line"><?=$row["person1"]?></span> 
+					<a href="<?=$row["link"]?>"><span class="line"><?=htmlspecialchars($row["person1"])?></span> 
 <?php 
 		if($row["person2"]){ 
 ?>
-							<span class="line"><?=$row["person2"]?></span> 
+							<span class="line"><?=htmlspecialchars($row["person2"])?></span> 
 <?php 	
 		} 
 ?>
-							<span class="title"><?=$row["title"]?></span></a>
+							<span class="title"><?=htmlspecialchars($row["title"])?></span></a>
 <?php
 	}
 ?>
