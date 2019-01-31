@@ -107,7 +107,6 @@
 				<p>
 					<span>Testimonial: <?=htmlspecialchars($row["person1"])?> <?=htmlspecialchars($row["person2"])?> <?=htmlspecialchars($row["title"])?><br /></span>
 					<?=substr(htmlspecialchars($row["testimony"]),0,160)?> ...
-
 				</p>
 			</div>
 <?php
