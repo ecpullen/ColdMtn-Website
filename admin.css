@@ -77,13 +77,13 @@ header a{
 
 .left a, .center a, .right a{
 
-	display: block;
-	top: 50%;
+	position: relative;
+	top: 40%;
 	height: 100%;
 	width: 100%;
-	/*position: relative;*/
-	/*background: white;*/
-	/*left: 50%;*/
+	text-decoration: none;
+	font-size: 30px;
+	color: #5C6164;
 }
 /*----------End Admin.php Navigation page Style--------*/
 
