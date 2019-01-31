@@ -30,5 +30,29 @@ if(isset($_POST["search"])){
 <?php
 		$i ++;
 	}
+	try{
+		$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
+			"ecpull21",
+			"qyu7hbhsr");
+		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$rows = $db->query("select * from Search where description like \"%$_POST[search]%\"");
+	}
+	catch(PDOException $e){
+		die($e);
+	}
+	foreach ($rows as $row) {
+		if($i == 5){
+			break;
+		}
+?>
+<a href="<?=$row["link"]?>" class="image">
+	<img src="<?=$row['link']?>">
+	<p>
+		<?=$row["description"]?>
+	</p>
+</a>
+<?php
+		$i ++;
+	}
 }
 ?>
