@@ -11,10 +11,7 @@ if(isset($_POST["search"])){
 			"qyu7hbhsr");
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$rows = $db->query("select * from testimonies where testimony like \"%$_POST[search]%\"");
-	}
-	catch(PDOException $e){
-		die($e);
-	}
+
 	$i=0;
 	foreach ($rows as $row) {
 		if($i == 5){
@@ -30,16 +27,7 @@ if(isset($_POST["search"])){
 <?php
 		$i ++;
 	}
-	try{
-		$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
-			"ecpull21",
-			"qyu7hbhsr");
-		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$rows = $db->query("select * from Search where description like \"%$_POST[search]%\"");
-	}
-	catch(PDOException $e){
-		die($e);
-	}
+	$rows = $db->query("select * from Search where description like \"%$_POST[search]%\"");
 	foreach ($rows as $row) {
 		if($i == 5){
 			break;
@@ -53,6 +41,10 @@ if(isset($_POST["search"])){
 </a>
 <?php
 		$i ++;
+	}
+		}
+	catch(PDOException $e){
+		
 	}
 }
 ?>
