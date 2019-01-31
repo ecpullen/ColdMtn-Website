@@ -10,7 +10,7 @@ if(isset($_POST["search"])){
 			"ecpull21",
 			"qyu7hbhsr");
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$rows = $db->query("select * from testimonies where testimony like \"%$_POST[search]%\"");
+		$rows = $db->query("select * from testimonies where testimony like \"%".$db->quote($_POST[search])."%\"");
 
 	$i=0;
 	foreach ($rows as $row) {
@@ -34,7 +34,7 @@ if(isset($_POST["search"])){
 		}
 ?>
 <a href="<?=$row["link"]?>" class="image">
-	<img src="<?=$row['link']?>">
+	<img src="<?=$row['link']?>" alt="search result for '<?=$_POST['search']?>'">
 	<p>
 		<?=$row["description"]?>
 	</p>

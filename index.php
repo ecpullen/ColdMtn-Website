@@ -11,8 +11,8 @@ head("<script src=\"transition.js\"></script>");
 <div class="main">	
 	<div class="leftarr" onclick="decrPhoto()"></div>
 	<div class="rightarr" onclick="incrPhoto()"></div>
-	<img id="image_roulette" src="#">
-	<img id="second_image" src="#">
+	<img id="image_roulette" src="#" alt="main transition image">
+	<img id="second_image" src="#" alt="secondary transition image">
 	<div id="roulette_control">
 		<div class="triangle-left" onclick="decrPhoto()"></div>
 		<div id="circles">

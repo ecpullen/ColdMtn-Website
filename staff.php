@@ -47,7 +47,7 @@ head("<link rel=\"stylesheet\" type=\"text/css\" href=\"staff.css\">");
 		<img src="staff/workshop.jpg">
 	</div>
 	<div class="side">
-		<img src="staff/jay-fischer.jpg">
+		<img src="staff/jay-fischer.jpg" alt="Owner Jay Fischer">
 		<h3>Habitat for Humanity</h3>
 		<p>
 			I have been involved in several Habitat for Humanity projects both in Maine, in Alabama’s Black Belt and the Mississippi Delta. I have served on the local board for years where we are focused on building sound housing with a sustainable model. Our current focus includes the development of four - 600 square foot houses in Rockland, Maine on the site of former housing for millworkers.<br /><br /><a href="http://www.midcoasthabitat.org">www.midcoasthabitat.org</a>
