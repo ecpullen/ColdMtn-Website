@@ -4,9 +4,53 @@
 * Date: 2/2019
 */
 
+/*----------General Style--------*/
 html,body{
+	background-color: #DEEAF0;
+	padding-top: 15px; 
 	height: 100%;
+	margin: 0px;
 }
+/*----------End General Style--------*/
+
+/*----------Navigation Bar Style--------*/
+.nav_bar {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	position: fixed;
+	padding: 0px;
+	text-align: center;
+	top: 0px;
+	z-index: 1;
+}
+
+header a:hover, #logout:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+header a, #logout{
+	padding: 5px;
+	color: white;
+	display: inline-block;
+	width: calc(25% - 15px);
+	text-decoration: none;
+}
+
+#logout_button {
+	font-size: 15pt;
+	color: white;
+	width: 100%;
+	background: transparent;
+	border: transparent;
+
+}
+
+#logout_button:active {
+	border: none;
+	outline: none;
+}
+
+/*----------End Navigation Bar Style--------*/
 
 .third{
 	width: calc(33% - 40px);
@@ -16,20 +60,32 @@ html,body{
 }
 
 /*----------Home Style--------*/
-#home{
-	/*background:#FAA;*/
+h1 {
+	margin-left: 10px;
 }
 
-#home div{
+#home_div{
+	color: #5C6164;
+}
+
+#home_form{
+	padding: 8px;
+	width: 325px;
+	border: 1px solid #5C6164;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+#image_div{
+	background-color: #ABD2D9;
 	width: 24%;
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
 }
 
-#home div img{
+#image_div img{
 	width: 100%;
-	overflow: hidden;
 }
 
 button.delete{
@@ -41,7 +97,7 @@ button.delete{
 	color: white;
 }
 
-#home div:hover button.delete{
+#image_div:hover button.delete{
 	display: block; 
 }
 /*----------End Home Style--------*/
