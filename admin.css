@@ -11,7 +11,7 @@ html,body{
 
 /*----------Home Style--------*/
 #home{
-	background:#FAA;
+	/*background:#FAA;*/
 }
 
 #home div{
@@ -41,18 +41,30 @@ button.delete{
 /*----------End Home Style--------*/
 
 /*----------Database Style--------*/
-#database{
-	background:#AFA;
+#images{
+	overflow-y: scroll;
+	height: 300px;
+	margin: 50px;
 }
 
-#database div{
-	width: 24%;
-	height:200px;
-	position: relative;
-	display: inline-block;
+#images img{
+	height: 60px;
+	width:75px;
 	overflow: hidden;
+	display: inline-block;
 }
 
+#images p{
+	display: inline-block;
+}
+
+#images div{
+	display: block;
+}
+
+#images div:hover{
+	background-color: #F33;
+}
 /*----------End Database Style--------*/
 
 /*---------Testimony Style--------*/

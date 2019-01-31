@@ -7,4 +7,17 @@
 			echo "failed";
 		}
 	}
+	elseif(isset($_POST["img"])){
+		try{
+			$db = new PDO("mysql:dbname=ecpull21;host=cs325.colby.edu",
+				"ecpull21",
+				"qyu7hbhsr");
+			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$q = "delete from Search where link = \"$_POST[img]\"";
+			$rows = $db->query($q);
+		}
+		catch(PDOExtension $e){
+			echo "an error occured";
+		}
+	}
 ?>
