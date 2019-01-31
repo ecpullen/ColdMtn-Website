@@ -29,3 +29,17 @@ function remDBPhoto(file){
 			alert("failed");
 		}});
 }
+
+function remtest(id){
+	$.ajax({url:"rem.php",
+		data:{"id":id},
+		method:"POST",
+		dataType:"text",
+		success:function(result){
+			// alert(result);
+			window.location.replace("admintest.php");
+		},
+		error: function(){
+			alert("failed");
+		}});
+}
