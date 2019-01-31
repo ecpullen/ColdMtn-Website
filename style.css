@@ -1,3 +1,10 @@
+/*
+* File: style.css
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
+
+/*--------Genera Styling-------*/
 html{
 	height: 100%;
 	min-width: 700px;
@@ -9,14 +16,16 @@ body {
 	background-color: #3E4F61;
 	font-family: 'Karla', sans-serif;
 }
+/*--------General Styling-------*/
 
+/*--------Image Roulette general Styling-------*/
 .main{
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
 }
 
-#image_roulette,#second_image {
+#image_roulette, #second_image {
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -25,204 +34,16 @@ body {
 	right: 0;
 }
 
-.head{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right:0;
-	height: 50px;
-	background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}
-
-header {
-	min-width: 700px;
-	position: fixed;
-	overflow:visible;
-	top: 0;
-	left: 0;
-	right:0;
-    z-index: 1;
-    height: 50px;
-}
-
-header a:hover{
-    background: rgba(0, 0, 0, .6);
-    width: 100%;
-}
-
-
-.head:hover {
- 	transition-duration: 0.3s;
-	background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 1);
-}
-
-.dd, #search {
-	display: inline-block;
-	position: relative;
-	overflow: visible;
-	align-items: center;
-	width: 120px;
-	font-size: 15pt;
-	text-align: center;
-    top: 0px;
-    height: 50px;
-    z-index:1;
-}
-
-.dd#about{
-	width: 115px;
-}
-
-.dd#test{
-	width: 150px;
-}
-
-.dd#press{
-	width: 90px;
-}
-
-.dd#contact{
-	width: 130px;
-}
-
-#search{
-	position:fixed;
-	right: 0px;
-	top: 10px;
-	padding-right: 30px;
-}
-
-#search button {
-	margin: 0px;
-	width: 10px;
-}
-
-
-.dd img{
-    margin: 0px 5px;
-    margin-top: 10px;
-    width: 150px;
-}
-
-#home{
-	width:160px;
-	top: 0px;
-}
-
-.mainlink{
-    position: absolute;
-    top: 0px;
-    bottom: -75px;
-    left: 0;
-    line-height: 50px;
-}
-
-.dd a{
-	color: white;
-	text-decoration: none;
-	width: 100%;
-	height: 50px;
-}
-
-.d-content a:hover{
-	/*background: rgba(0, 0, 0, 1);*/
-}
-
-.dd .d-content a .line{
-	display: block;
-}
-
-.dd .d-content a .title{
-	display: block;
-	font-size: 11pt;
-	text-indent: 10px;
-}
-
-.d-content{
-	width: 200px;
-	display: none;
-	position: absolute;
-	top: 50px;
-}
-
-#searchContent{
-	width: 500px;
-	right: 30px;
-	top:40px;
-}
-
-#searchContent p{
-	margin: 0;
-}
-
-.test{
-	font-size: 12pt;
-	color: #B9B1A6;
-}
-
-#searchContent img{
-	height: 60px;
-	width:75px;
-	overflow: hidden;
-	display: inline-block;
-}
-
-#searchContent .image p{
-	display: inline-block;
-	width: 400px;
-}
-
-.d-content a{
-	float: none;
-	display: block;
-	text-align: left;
-	padding: 0px 15px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-    background: rgba(0, 0, 0, 0.4);
-    height: auto;
-}
-
-
-.mainlink{
-	width: 100%;
-	height: 100%;
-}
-
-.dd:hover .d-content{
-	display:block;
-}
-
-.dd:hover not(#search){
-	background: rgba(0, 0, 0, 0.6);
-}
-
-#logo{
-	background-color: rgba(0, 0, 0, 0.6);
-	position: fixed;
-    top: 85%;
-    width: 20%;
-    left: 75%;
-    padding:.5%;
-}
-
 #roulette_control{
 	text-align: center;
 	position: fixed;
 	width:40%;
 	left: 30%;
 	top:90%;
-	/*background-color: rgba(0, 0, 0, 0.2);*/
 }
+/*--------End Image Roulette general Styling-------*/
 
-#circles{
-	display: inline-block;
-	width: 80%;
-}
-
+/*--------Image Roulette User Interface Styling-------*/
 .triangle-left {
 	display: inline-block;
 	width: 0;
@@ -255,6 +76,11 @@ header a:hover{
 	border-left: 15px solid white;
 	border-bottom: 7.5px solid transparent;
 	margin: 0px 2%;
+}
+
+#circles{
+	display: inline-block;
+	width: 80%;
 }
 
 .circle{
@@ -308,7 +134,187 @@ header a:hover{
 	right:0;
 	z-index: 99;
 }
+/*--------End Image Roulette User Interface Styling-------*/
 
+/*--------Header Styling-------*/
+.head{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+	height: 50px;
+	background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+header {
+	min-width: 700px;
+	position: fixed;
+	overflow:visible;
+	top: 0;
+	left: 0;
+	right:0;
+    z-index: 1;
+    height: 50px;
+}
+
+header a:hover{
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+}
+
+#logo{
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+    top: 85%;
+    width: 20%;
+    left: 75%;
+    padding:.5%;
+}
+
+#home{
+	width:160px;
+	top: 0px;
+}
+
+.mainlink{
+    position: absolute;
+    top: 0px;
+    bottom: -75px;
+    left: 0;
+    line-height: 50px;
+    width: 100%;
+	height: 100%;
+}
+/*--------End Header Styling-------*/
+
+/*--------Menu Drop Down Styling-------*/
+.dd, #search {
+	display: inline-block;
+	position: relative;
+	overflow: visible;
+	align-items: center;
+	width: 120px;
+	font-size: 15pt;
+	text-align: center;
+    top: 0px;
+    height: 50px;
+    z-index:1;
+}
+
+.dd#about{
+	width: 115px;
+}
+
+.dd#test{
+	width: 150px;
+}
+
+.dd#press{
+	width: 90px;
+}
+
+.dd#contact{
+	width: 130px;
+}
+
+.dd img{
+    margin: 0px 5px;
+    margin-top: 10px;
+    width: 150px;
+}
+
+.dd a{
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	height: 50px;
+}
+
+.dd .d-content a .line{
+	display: block;
+}
+
+.dd .d-content a .title{
+	display: block;
+	font-size: 11pt;
+	text-indent: 10px;
+}
+
+.d-content{
+	width: 200px;
+	display: none;
+	position: absolute;
+	top: 50px;
+}
+
+.d-content a{
+	float: none;
+	display: block;
+	text-align: left;
+	padding: 0px 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    height: auto;
+}
+
+.dd:hover .d-content{
+	display:block;
+}
+
+.dd:hover not(#search){
+	background: rgba(0, 0, 0, 0.6);
+}
+/*--------End Drop Down Styling-------*/
+
+/*--------Search Bar Styling-------*/
+#search{
+	width: 170px;
+	position:fixed;
+	right: 0px;
+	top: 10px;
+	padding-right: 30px;
+}
+
+#searchbar {
+	width: 100%;
+	color: #CCC;
+	background-color: rgba(0, 0, 0, 0.4);
+	border:0px solid black;
+	padding: 8px;
+	padding-left: 18px; 
+	padding-right: 4px; 
+	border-radius: 20px;
+	font-size: 10pt;
+}
+
+#searchContent{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 500px;
+	right: 30px;
+	top:40px;
+}
+
+#searchContent p{
+	margin: 0;
+}
+
+#searchContent img{
+	height: 60px;
+	width:75px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+#searchContent .image p{
+	display: inline-block;
+	width: 400px;
+}
+/*--------End Search Bar Styling-------*/
+
+/*--------Footer Styling-------*/
 footer{
 	position:fixed;
 	width: 100%;
@@ -317,8 +323,9 @@ footer{
 	bottom: 0;
 	padding-left: 5px;
 }
+/*--------End Footer Styling-------*/
 
-/*sidebar*/
+/*--------Sidebar Styling-------*/
 .sidebar{
 	width: 160px;
 	float: left;
@@ -352,3 +359,4 @@ footer{
 	display: block;
 	padding-left: 5px;
 }
+/*--------End Sidebar Styling-------*/

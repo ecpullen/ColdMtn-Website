@@ -1,11 +1,19 @@
+/*
+* File: testimonials.css
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
 
+/*--------Section Styling-------*/
 .testimonies{
 	width: 90%;
 	margin-top: 80px;
 	float:right;
 	align-content: center;
 }
+/*--------End Section Styling-------*/
 
+/*--------Introduction Styling-------*/
 #intro{
 	margin-top: 50px;
 }
@@ -19,7 +27,9 @@
 	font-size: 12pt;
 	margin: 5%;
 }
+/*--------End Introduction Styling-------*/
 
+/*--------Testimonials Styling-------*/
 .testimonial, #intro{
 	margin: 0px 15%;
 	width: 605px;
@@ -36,11 +46,17 @@
 	text-align: center;
 	display: block;
 }
+/*--------End Testimonials Styling-------*/
+
+/*--------Div Navigation Styling-------*/
 
 .loc{
 	height:50px;
 }
+/*--------End Div Navigation Styling-------*/
 
+/*--------Change shade of current page-------*/
 a[href="testimonials.php"]{
 	background: rgba(0, 0, 0, 0.2);
 }
+/*--------End Change shade of current page-------*/

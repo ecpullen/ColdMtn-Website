@@ -1,4 +1,11 @@
-.press_text_box{
+/*
+* File: press.css
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
+
+/*--------Section Styling-------*/
+.press_page{
 	width: 60%;
 	margin: 0px 20%;
 	margin-top: 80px;
@@ -6,7 +13,7 @@
 	background: #967D69;
 }
 
-.press_text_box h1{
+.press_page h1{
 	width: 70%;
 	margin-left: 15%;
 	padding-top: 50px;
@@ -14,27 +21,27 @@
 	color: white;
 }
 
-.press_text_box p{
+.press_page p{
 	width: 70%;
 	margin-left: 15%;
 	padding-bottom: 20px;
 	font-size: 15pt;
 }
+/*--------End Section Styling-------*/
 
-
-.img_container{
+/*--------Magazine Cover Rack Styling-------*/
+.image_shelf{
 	padding: 10px;
 	margin-bottom: 80px;
 }
 
-.column {
+.magazine_cover {
   float: left;
   width: calc(25% - 30px);
   margin: 5px;
   padding: 10px;
   background-color: #B9B1A6;
   text-align: center;
-  /*border: 1px solid black;*/
 }
 
 .row:after {
@@ -42,13 +49,14 @@
   display: table;
   clear: both;
 }
+/*--------End Magazine Cover Rack Styling-------*/
 
+/*--------Magazine Cover Styling-------*/
 img {
 	width: 100%;
 }
 
 a {
-	/*word-break: break-all;*/
 	text-decoration: none;
 	color: #665;
 }
@@ -58,7 +66,10 @@ a:hover {
 	color: black;
 	color: #DDD;
 }
+/*--------End Magazine Cover Styling-------*/
 
+/*--------Change shade of current page-------*/
 a[href="press.php"]{
 	background: rgba(0, 0, 0, 0.2);
 }
+/*--------End shade of current page-------*/

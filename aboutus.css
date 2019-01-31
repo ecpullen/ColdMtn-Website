@@ -1,3 +1,10 @@
+/*
+* File: aboutus.css
+* Authors: Ethan Pullen & Dhruv Joshi
+* Date: 2/2019
+*/
+
+/*--------Section Styling-------*/
 .about{
 	width: 60%;
 	margin: 0px 20%;
@@ -26,8 +33,11 @@
 	float:left;
 	margin-right:15px;
 }
+/*--------End Section Styling-------*/
 
+/*--------Change shade of current page-------*/
 a[href="aboutus.php"]{
 	background: rgba(0, 0, 0, 0.2);
 }
+/*--------End Change shade of current page-------*/
 
