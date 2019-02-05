@@ -11,9 +11,9 @@
 			"ecpull21",
 			"qyu7hbhsr");
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$rows = $db->query("select * from admins where password='".
-			$db->quote($_SESSION["password"])."' and username='".
-			$db->quote($_SESSION["username"])."';");
+		$rows = $db->query("select * from admins where password=".
+			$db->quote($_SESSION["password"])." and username=".
+			$db->quote($_SESSION["username"]).";");
 		if($rows->rowCount() == 0){
 			die("<h1>Invalid Login</h1><a href='admin.html'>Try again</a>");
 		}
